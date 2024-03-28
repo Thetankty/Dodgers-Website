@@ -1,0 +1,176 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #005A9C;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Header Styles */
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    height: 30px;
+}
+
+.head img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Hamburger Menu */
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-menu span {
+    width: 2rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* Navigation Bar */
+
+.nav-active {
+    display: block;
+}
+
+
+
+nav {
+    display: none;
+    background-color: #003087; 
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 0;
+    width: 100%;;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0; 
+    right: 0; 
+    background: white;
+    transition: all .3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #005A9C;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Parallax Section */
+
+.parallax-section {
+    height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#hero { 
+    background-image: url("assets/DodgersStadium.jpeg");
+}
+
+#players {
+    background-image: url("assets/DodgersPlayers.webp"); 
+}
+
+#players a {
+    color: white;
+    text-decoration: none;
+}
+
+#players a:hover {
+    color: #FFD100; 
+}
+
+#stadium {
+    background-image: url("assets/Skyline.webp");
+}
+
+#fans {
+    background-image: url("assets/DodgersFans.jpeg");
+}
+
+#tickets {
+    background-image: url("assets/DodgersTickets.jpeg");
+}
+
+#footer {
+    background-image: url("assets/Thankyou.jpeg");
+}
+
+.content-section {
+    padding: 40px;
+    background-color: white;
+}
